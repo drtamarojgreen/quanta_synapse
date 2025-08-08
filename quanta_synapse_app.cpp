@@ -13,18 +13,9 @@
 #include "QuantaGlia.h"
 #include "Signal.h"
 
-using namespace std;
+namespace App {
 
-// Signal structure
-struct Signal {
-    string sender;
-    string receiver;
-    string type;
-    string content;
-    float priorityScore;
-    float ethicsScore;
-    chrono::system_clock::time_point timestamp;
-};
+using namespace std;
 
 class QuantaSynapse {
 private:
@@ -78,3 +69,5 @@ int main() {
 
     return 0;
 }
+
+} // namespace App
